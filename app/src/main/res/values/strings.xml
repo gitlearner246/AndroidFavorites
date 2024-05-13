@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Favorites</string>
+
+    <string name="image_description">推しの画像</string>
+    <string name="label_birthday">誕生日：%s</string>
+    <string name="btn_share">おすすめする</string>
+
+    <string name="explain_1">アイドルグループ「XYLITOL」の一員。初ワンマンライブで緊張し、歌詞を間違えたが、ファンが声を合わせて助けたエピソードがある。</string>
+    <string name="explain_2">グループ全盛の時代にソロを貫く新世代アイドル王子。ひとりで黙々と食事を取り続ける動画配信チャンネルがじわじわ人気を集めている。</string>
+    <string name="explain_3">個性派俳優。闇を抱えた役柄の設定が、彼の新しい演技の扉を開いた、ドラマ「逆ひょうきんもの」は必見。</string>
+    <string name="explain_4">明るさと元気さが取り柄の女性タレント。冠ラジオで、自身の芸能活動のスタンスを熱く語った回が神回と話題。</string>
+    <string name="explain_5">ポップスの新星シンガー。からあげが大好物で、ワンマンライブの際は大量のからあげのケータリングが用意されることで有名。</string>
+    <string name="explain_6">ロックバンド「熱烈」のボーカル。ライブ中にステージから転落したが、ファンに支えられて空中で演奏を続けた。名曲「浮力」はその経験をもとに誕生した。</string>
+    <string name="explain_7">アニメ「逆魔法少女」に登場する主人公。「実家帰省編」が終わる4話まで、一切の魔法が登場しない斬新な展開が話題を呼び、SNSでバズを起こした。</string>
+    <string name="explain_8">スポ根アニメ「全国へ行く！」でとある部活動に打ち込む主人公。「何のスポーツ」で全国へ行くのか、概要が明かされないまま進むミステリ要素が、視聴者の考察に火をつけて話題になった。</string>
+    <string name="explain_9">2015年結成のお笑いコンビ。漫才の冒頭で披露する「リズムにあわせて雑学をまくしたてるつかみ」が長すぎると、ファンの間で話題に。</string>
+</resources>
