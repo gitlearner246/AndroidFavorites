@@ -1,9 +1,9 @@
 package com.example.favorites
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.Toast
+import android.widget.SimpleAdapter
+import androidx.appcompat.app.AppCompatActivity
 import com.example.favorites.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,21 +15,20 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val data = listOf(
-            "Sakurairo", "タベザカリハルト", "やみあがりけん", "太陽はらっぱ", "音谷一本串", "なにわバナナ", "ほうき星みぞれ", "準決まける", "ぜんぜん"
+        binding.listView.adapter = SimpleAdapter(
+            this,
+            listData,
+            R.layout.list_item,
+            arrayOf("image", "name"),
+            intArrayOf(R.id.image, R.id.name)
         )
 
-        binding.listView.adapter = ArrayAdapter(
-        this,
-        android.R.layout.simple_list_item_1,
-        data
-        )
-
-        binding.listView.setOnItemClickListener{ parent, view, position, id ->
-            Toast.makeText(this@MainActivity, "${data[position]}を選択しました",
-                Toast.LENGTH_SHORT).show()
+        binding.listView.setOnItemClickListener { _, _, position, _ ->
+            startActivity(
+                Intent(this@MainActivity, DetailActivity::class.java).apply {
+                    putExtra("POSITION", position)
+                }
+            )
         }
     }
-
-
 }
